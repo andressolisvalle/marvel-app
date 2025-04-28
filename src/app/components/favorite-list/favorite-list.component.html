@@ -1,0 +1,26 @@
+<div class="container mt-4">
+  <h2 class="fw-bold mb-4" style="color: #e62429;">Mis Favoritos</h2>
+
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let favorite of favorites">
+      <div class="card h-100 favorite-card">
+
+        <img [src]="favorite.imageUrl"
+             class="card-img-top img-fluid favorite-image"
+             alt="{{ favorite.title }}">
+      
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold">{{ favorite.title }}</h5>
+      
+          <div class="d-flex justify-content-center">
+            <button class="btn btn-sm btn-outline-danger" (click)="onDeleteFavorite(favorite.id)">
+              <i class="bi bi-trash"></i> 
+              <span class="ms-1">Eliminar</span>
+            </button>
+          </div>
+        </div>
+      
+      </div>      
+    </div>
+  </div>
+</div>

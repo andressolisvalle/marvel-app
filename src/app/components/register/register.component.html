@@ -1,0 +1,55 @@
+<div class="register-wrapper">
+  <div class="register-bg">
+  
+<div class="container d-flex justify-content-center align-items-center register-container">
+  <div class="card register-card">
+    <!-- Logo Marvel -->
+    <div class="text-center mb-4">
+      <img src="/assets/images/marvel.png" alt="Marvel Logo" class="img-fluid register-logo">
+    </div>
+
+    <h2 class="text-center mb-4 fw-bold register-title">Crear Nueva Cuenta</h2>
+
+    <div *ngIf="errorMessage" class="alert alert-danger alert-dismissible fade show">
+      {{ errorMessage }}
+      <button type="button" class="btn-close" (click)="errorMessage = ''"></button>
+    </div>
+
+    <form (ngSubmit)="register()">
+      <div class="mb-3">
+        <label class="form-label fw-bold">Nombre</label>
+        <input [(ngModel)]="name" name="name" type="text" required class="form-control border-2"
+          placeholder="Ej: Tony Stark">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label fw-bold">Identificación</label>
+        <input [(ngModel)]="identification" name="identification" type="text" required class="form-control border-2"
+          placeholder="Ej: 123456789">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label fw-bold">Email</label>
+        <input [(ngModel)]="email" name="email" type="email" required class="form-control border-2"
+          placeholder="ejemplo@email.com">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label fw-bold">Contraseña</label>
+        <input [(ngModel)]="password" name="password" type="password" required class="form-control border-2"
+          placeholder="••••••••">
+        <small class="text-muted">Mínimo 8 caracteres</small>
+      </div>
+
+      <button type="submit" class="btn btn-danger w-100 btn-register-submit mb-2">
+        REGISTRARSE
+      </button>
+
+      <button type="button" class="btn btn-outline-dark w-100 btn-login-redirect" (click)="goToLogin()">
+        ¿Ya tienes cuenta? <span class="fw-bold" style="color: #e62429;">Inicia Sesión</span>
+      </button>
+    </form>
+  </div>
+</div>
+</div>
+</div>

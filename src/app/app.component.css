@@ -1,0 +1,15 @@
+@media (max-width: 576px) {
+  .register-card {
+    width: 90%; 
+    padding: 1.5rem;
+  }
+
+  .register-logo {
+    max-height: 40px; 
+  }
+
+  .btn-register-submit,
+  .btn-login-redirect {
+    padding: 0.5rem; 
+  }
+}

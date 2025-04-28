@@ -1,0 +1,44 @@
+/* Estilos para la Navbar */
+.navbar {
+    background-color: #e62429;
+  }
+  
+  /* Estilos para las alertas flotantes */
+  .alert-floating {
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1050;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  /* Banner de bienvenida */
+  .marvel-banner {
+    background-color: #202020;
+    
+  }
+  
+  
+  /* Spinner de carga */
+  .loading-spinner {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  /* Estilo para título de la sección de cómics */
+  .comics-title {
+    color: #e62429;
+  }
+  
+  /* Estilo para separador */
+  .separator-line {
+    border-top: 2px solid #e62429;
+  }
+  
+  /* Estilo para mensaje de no favoritos */
+  .no-favorites-icon {
+    font-size: 3rem;
+  }
+  

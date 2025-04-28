@@ -1,0 +1,71 @@
+/* Contenedor principal del Register */
+.register-container {
+  height: 100vh;
+  background: transparent;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 2;
+}
+  /* Tarjeta del formulario de registro */
+  .register-card {
+    position: relative;
+    z-index: 3;
+    width: 400px;
+    padding: 2rem;
+    border: none;
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+  
+  /* Logo en el registro */
+  .register-logo {
+    max-height: 50px;
+  }
+  
+  /* Título de registro */
+  .register-title {
+    color: #e62429;
+  }
+  
+  /* Botones */
+  .btn-register-submit {
+    font-weight: bold;
+    padding: 0.75rem;
+  }
+  
+  .btn-login-redirect {
+    font-weight: bold;
+    padding: 0.75rem;
+  }
+
+  .register-wrapper {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  .register-bg {
+    position: fixed; /* Cambiado a fixed para mejor comportamiento */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/images/fondo4.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: 0;
+  }
+  
+  .register-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
