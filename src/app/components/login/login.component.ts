@@ -40,7 +40,7 @@ export class LoginComponent {
         const token = response.token; 
         if (token) {
           localStorage.setItem('token', token);
-          this.router.navigate(['/']);
+          this.router.navigate(['/home']);
         } else {
           this.errorMessage = 'No se recibió un token válido.';
         }
